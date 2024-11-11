@@ -73,7 +73,7 @@ public class PG_009_Languages extends BaseClass {
 				PG_003_Dashboard dashboard = new PG_003_Dashboard(driver);
 				Thread.sleep(2000);
 				dashboard
-				.click_On_ClassDetails(classdetails)
+				.Click_On_ClassDetails(classdetails)
 				.verify_the_CohortDetails();
 				reportStep(methodName +" "+ onSuccess+" "+"and syllable is"+" "+expectedlanguages, "pass");
 				logger.info(methodName+ " " + "is been clicked ");

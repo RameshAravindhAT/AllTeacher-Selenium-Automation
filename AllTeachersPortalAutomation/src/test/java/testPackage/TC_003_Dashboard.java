@@ -29,7 +29,7 @@ public class TC_003_Dashboard extends BaseClass{
 		.Enter_the_password(password)
 		.Click_on_the_loginButton()
 		.VerifyToastMessage(message)
-		.click_On_ClassDetails(classdetails);
+		.Click_On_ClassDetails(classdetails);
 
 		
 	}

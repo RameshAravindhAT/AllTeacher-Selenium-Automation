@@ -51,9 +51,12 @@ public class PG_003_Dashboard extends BaseClass{
 	@FindBy(xpath = "//div[text()='Students']")
 	public WebElement Students;
 	
+	@FindBy(xpath="//p[text()='Discovery content ']")
+	public WebElement discoveryContent;
 	
 	
-	public PG_003_Dashboard click_On_ClassDetails(String expectedClass)
+	
+	public PG_003_Dashboard Click_On_ClassDetails(String expectedClass)
 	{
 		  String methodName = Thread.currentThread().getStackTrace()[1].getMethodName().replace("_", " ");
 		    try {
@@ -221,6 +224,21 @@ public class PG_003_Dashboard extends BaseClass{
 		}
 		return new PG_010_Students(driver);
 		
+	}
+	
+	public PG_012_DiscoveryContent Click_on_DiscoveryContent()
+	{
+		String methodName = Thread.currentThread().getStackTrace()[1].getMethodName().replace("_", " ");
+		try {
+			Thread.sleep(3000);
+			discoveryContent.click();
+			reportStep(methodName, "pass");
+			logger.info(methodName+ " " + "verified");
+		} catch (Exception e) {
+			logger.info(methodName + " " + "Incorrect page ");
+			e.printStackTrace();
+		}
+		return new PG_012_DiscoveryContent(driver);
 	}
 		
 		

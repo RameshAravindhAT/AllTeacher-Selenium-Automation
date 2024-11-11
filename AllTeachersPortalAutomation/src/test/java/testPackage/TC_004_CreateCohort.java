@@ -29,7 +29,7 @@ public class TC_004_CreateCohort extends BaseClass {
             .Enter_the_password(password)
             .Click_on_the_loginButton()
             .VerifyToastMessage(message)
-            .click_On_ClassDetails(classDetails)
+            .Click_On_ClassDetails(classDetails)
             .click_On_Create_Custom_Cohort()
             .choose_the_syllable(syllable)
             .enter_the_cohortName(cohortName)

@@ -51,7 +51,6 @@ public class BaseClass{
     public static String sheetName;
     
     public static PG_001_LoginPage login;
-
     
     public static CustomTestListener listener = new CustomTestListener();
 
