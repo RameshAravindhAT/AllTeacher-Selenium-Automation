@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="classes">
+    <listeners>
+        <listener class-name="utils.CustomTestListener"/>
+    </listeners>
+    <test name="TestSuite">
+        <classes>
+            <class name="testPackage.TC_001_Login"/>
+            <class name="testPackage.TC_002_LogOut"/>
+            <class name="testPackage.TC_003_Dashboard"/>
+            <class name="testPackage.TC_004_CreateCohort"/>
+            <class name="testPackage.TC_005_ViewCohort"/>
+            <class name="testPackage.TC_006_UpdateCohort"/>
+            <class name="testPackage.TC_007_HistoryOfCohorts"/>
+            <class name="testPackage.TC_009_Language"/>
+            <class name="testPackage.TC_010_Students"/>
+        </classes>
+    </test>
+</suite>
+
